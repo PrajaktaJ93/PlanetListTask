@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlanetListTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="PlanetListTableViewCell" customModule="JPMC_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCv-By-hXo">
+                        <rect key="frame" x="10" y="10" width="300" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-8Q-rDS">
+                        <rect key="frame" x="10" y="71" width="300" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dVc-8Q-rDS" secondAttribute="trailing" constant="10" id="4eo-kT-PQI"/>
+                    <constraint firstAttribute="bottom" secondItem="dVc-8Q-rDS" secondAttribute="bottom" constant="10" id="E7D-nj-ccA"/>
+                    <constraint firstAttribute="trailing" secondItem="kCv-By-hXo" secondAttribute="trailing" constant="10" id="Hgl-0z-5Al"/>
+                    <constraint firstItem="kCv-By-hXo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="M0K-qb-3lB"/>
+                    <constraint firstItem="dVc-8Q-rDS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="O2f-Sc-0xI"/>
+                    <constraint firstItem="dVc-8Q-rDS" firstAttribute="top" secondItem="kCv-By-hXo" secondAttribute="bottom" constant="10" id="agz-vX-zNG"/>
+                    <constraint firstItem="kCv-By-hXo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uyD-m3-woB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="climateLbl" destination="dVc-8Q-rDS" id="Jad-JQ-JAR"/>
+                <outlet property="planetNameLbl" destination="kCv-By-hXo" id="nDg-yS-neL"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="76.004464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
